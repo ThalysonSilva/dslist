@@ -26,7 +26,11 @@ public class Game {
 	private String platforms;
 	private Double score;
 	private String imgUrl;
+	
+	@Column(columnDefinition = "TEXT") // tem que definir q é um text, pq se deixar varchar vai ter caracteres limites de 256, ai tem que colocar text, por isso precisa desse colums.
 	private String shortDescription;
+	
+	@Column(columnDefinition = "TEXT")
 	private String longDescription;
 	
 	public Game() {
